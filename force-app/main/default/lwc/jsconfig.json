@@ -3,8 +3,11 @@
         "experimentalDecorators": true,
         "baseUrl": ".",
         "paths": {
-            "c/myPublisherComponent": [
-                "myPublisherComponent/myPublisherComponent.js"
+            "c/subscriberComponent": [
+                "subscriberComponent/subscriberComponent.js"
+            ],
+            "c/publisherComponent": [
+                "publisherComponent/publisherComponent.js"
             ]
         }
     },

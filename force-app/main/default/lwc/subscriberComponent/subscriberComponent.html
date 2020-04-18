@@ -1,0 +1,15 @@
+<!-- subscribeComponent.html -->
+
+<template>
+    <lightning-card title="myLwcSubscriber" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <p>MessageChannel: SampleMessageChannel</p>
+            <br>
+            <lightning-button label="Subscribe" onclick={subscribeMC}></lightning-button>
+            <lightning-button label="Unsubscribe" onclick={unsubscribeMC}></lightning-button>
+            <br>
+            <p>Received message:</p>
+            <textarea id="receivedMessageTextArea" class="textareaReceivedMessage" rows="7" disabled>{receivedMessage}</textarea>
+        </div>
+    </lightning-card>
+</template>

@@ -3,12 +3,4 @@
     <masterLabel>SampleMessageChannel</masterLabel>
     <isExposed>true</isExposed>
     <description>This is a sample Lightning Message Channel.</description>
-    <lightningMessageFields>
-        <fieldName>messageToSend</fieldName>
-        <description>The message to communicate to others</description>
-    </lightningMessageFields>
-    <lightningMessageFields>
-        <fieldName>sourceSystem</fieldName>
-        <description>Who Is Saying This?</description>
-    </lightningMessageFields>
 </LightningMessageChannel>
