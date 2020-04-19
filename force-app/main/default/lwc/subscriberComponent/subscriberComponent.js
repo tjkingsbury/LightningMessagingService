@@ -6,7 +6,8 @@ import SAMPLEMC from '@salesforce/messageChannel/SampleMessageChannel__c';
 import searchAccounts from '@salesforce/apex/AccountSearch.searchAccounts';
 
 const columns = [
-    { label: 'Label', fieldName: 'Name' }
+    { label: 'Name', fieldName: 'Name' },
+    { label: 'Type', fieldName: 'Type' }
 ];
 
 export default class SubscribeComponent extends LightningElement {
@@ -46,12 +47,8 @@ export default class SubscribeComponent extends LightningElement {
     }
 
     handleMessage(message) {
-        console.log('in handle message');
         this.receivedMessage = message ? JSON.stringify(message, null, '\t') : 'no message payload';
-        console.log('receivedMessage: ' + this.receivedMessage);
-        console.log('name: ' + message.nameMessage);
         this.accountName = message.nameMessage;
-        console.log('accounts: ' + JSON.stringify(this.accounts));
     }
 
     @wire(searchAccounts, {accountName : '$accountName'})
