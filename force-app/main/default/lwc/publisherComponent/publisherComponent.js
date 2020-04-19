@@ -10,7 +10,7 @@ export default class PublisherComponent extends LightningElement {
           
     handleClick() {
         
-        const message = { message : this.inputMessage};
+        const message = { nameMessage : this.inputMessage};
         publish(this.messageContext, SAMPLEMC, message);
     }
 
